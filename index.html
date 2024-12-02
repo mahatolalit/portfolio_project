@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="./src/styles/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#about">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="about" class="about">
+      <div class="container about-container">
+        <img src="./assets/pfp.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            Hi! I’m Draky, a developer passionate about creating intuitive and visually appealing web experiences. I specialize in modern web design and interactive applications.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card glass-card">
+            <img src="./assets/projectOne.png" alt="Project 1">
+            <h3>Project One</h3>
+            <p>Restaurant Menu</p>
+            <a href="https://github.com/mahatolalit/restaurant_menu/blob/main/index.html" target="_blank">View Code</a> | <a href="https://mahatolalit.github.io/restaurant_menu/" target="_blank">Live Demo</a>
+          </div>
+          <div class="project-card glass-card">
+            <img src="./assets/projectTwo.png" alt="Project 2">
+            <h3>Project Two</h3>
+            <p>Personal Portfolio</p>
+            <a href="#" target="_blank">View Code</a> | <a href="#" target="_blank">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email or connect on social media:</p>
+        <form id="contact-form">
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+          <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <div id="form-message"></div>
+        <div class="social-links">
+          <a href="https://x.com/_mahatolalit" target="_blank">
+            <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="Twitter">
+          </a>
+          <a href="https://github.com/mahatolalit" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/lalitmahato1/" target="_blank">
+            <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 @draky. All rights reserved.</p>
+  </footer>
+  <script src="./src/scripts/script.js"></script>
+</body>
+</html>
